@@ -10,5 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamozio/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamozio/test/issues"
+  },
+  "homepage": "https://github.com/adamozio/test#readme"
 }
