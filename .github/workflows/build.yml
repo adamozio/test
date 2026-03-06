@@ -1,0 +1,26 @@
+name: Build Node.js
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobierz kod
+        uses: actions/checkout@v4
+
+      - name: Ustaw Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Zainstaluj zależności
+        run: npm install
+
+      - name: Zbuduj projekt
+        run: npm run build
